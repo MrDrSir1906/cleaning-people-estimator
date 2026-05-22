@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #1a1a2e;
+  --ink-light: #3a5a8a;
+  --blue: #2e7be0;
+  --blue-light: #dbeafe;
+  --blue-mid: #93c5fd;
+  --blue-pill: #3b82f6;
+  --paper: #fffef8;
+  --paper-dark: #f5f2e8;
+  --line: #b8cfe8;
+  --red: #dc2626;
+  --green: #16a34a;
+  --green-light: #dcfce7;
+  --border: #c3d0e8;
+  --font-marker: 'Permanent Marker', cursive;
+  --font-body: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #e8e8e8;
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=number],
+textarea {
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  padding: 7px 9px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
+  outline: none;
+  transition: border 0.15s;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--blue);
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 58px;
+}
